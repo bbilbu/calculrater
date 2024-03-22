@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>kg과 파운드 환산기</title>
+</head>
+<body>
+    <h1>kg과 파운드 환산기</h1>
+    <form>
+        <label for="kg">kg 입력:</label>
+        <input type="number" id="kg" name="kg"><br><br>
+        <input type="button" value="파운드로 변환" onclick="convertToPound()">
+    </form>
+    <p id="result"></p>
+
+    <script>
+        function convertToPound() {
+            var kg = document.getElementById("kg").value;
+            var result = document.getElementById("result");
+            result.innerHTML = "파운드로 변환된 값: " + (kg * 2.20462);
+        }
+    </script>
+</body>
+</html>
